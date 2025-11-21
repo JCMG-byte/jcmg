@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Car Inspiration Gen V3.0 - TECH EDITION</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="circuit-bg"></div>
+
+    <div class="main-wrapper">
+        <div class="console-body tech-theme">
+            
+            <header class="tech-header">
+                <div class="status-lights">
+                    <span class="light active"></span><span class="light"></span><span class="light"></span>
+                </div>
+                <h1 class="main-title">基层美工 汽车设计灵感生成器 <span class="version">V1.0</span></h1>
+            </header>
+
+            <div class="screen-bezel">
+                <div class="lcd-screen digital-grid">
+                    
+                    <div class="reel-cell">
+                        <div class="reel-header">SCENE / 场景</div>
+                        <div class="reel-window">
+                            <div id="reel1" class="reel-strip">
+                                <div class="item"><span class="en">READY</span><span class="cn">就绪</span></div>
+                            </div>
+                            <div class="scanline"></div>
+                        </div>
+                    </div>
+
+                    <div class="reel-cell">
+                        <div class="reel-header">PROP. / 车型</div>
+                        <div class="reel-window">
+                            <div id="reel2" class="reel-strip">
+                                <div class="item"><span class="en">SET</span><span class="cn">预备</span></div>
+                            </div>
+                            <div class="scanline"></div>
+                        </div>
+                    </div>
+
+                    <div class="reel-cell">
+                        <div class="reel-header">BRAND / 品牌</div>
+                        <div class="reel-window">
+                            <div id="reel3" class="reel-strip">
+                                <div class="item"><span class="en">GO</span><span class="cn">开始</span></div>
+                            </div>
+                            <div class="scanline"></div>
+                        </div>
+                    </div>
+
+                    <div class="reel-cell">
+                        <div class="reel-header">STYLE / 风格</div>
+                        <div class="reel-window">
+                            <div id="reel4" class="reel-strip">
+                                <div class="item"><span class="en">>>></span><span class="cn">>>></span></div>
+                            </div>
+                            <div class="scanline"></div>
+                        </div>
+                    </div>
+
+                </div> </div>
+
+            <div class="output-area tech-output">
+                <p id="prompt-text">INITIALIZING SYSTEM... AWAITING INPUT.</p>
+            </div>
+
+            <div class="controls-area tech-controls">
+                <div class="data-port">DATA PORT // <span class="blink">_</span></div>
+                
+                <div class="action-buttons">
+                    <button id="spin-btn" class="tech-btn">ENGAGE / 启动</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="watermark tech-watermark">基层美工小陈 DESIGN // TECH-LAB Ver.</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
