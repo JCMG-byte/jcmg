@@ -15,6 +15,7 @@ const data = {
         { en: 'Sky', cn: '天空' },
         { en: 'Railway', cn: '轨道' }, // Fixed typo
         { en: 'Space', cn: '太空' },
+        { en: 'Wasteland', cn: '废土' },
         { en: 'Cyber City', cn: '赛博都市' }
     ],
     // Reel 2: Proportion / 车型
@@ -74,6 +75,33 @@ const data = {
         { en: 'AUDI', cn: '奥迪' },
         { en: 'DMC', cn: '德罗宁' },
         { en: 'SAAB', cn: '萨博' },
+        { en: 'TOYOTA', cn: '丰田' },
+        { en: 'Lexus', cn: '雷克萨斯' },
+        { en: 'HYUNDAI', cn: '现代' },
+        { en: 'GENESIS', cn: '捷尼塞斯' },
+        { en: 'KIA', cn: '起亚' },
+        { en: 'Range Rover', cn: '路虎' },
+        { en: 'Honda', cn: '本田' },
+        { en: 'Ford', cn: '福特' },
+        { en: 'Mustang', cn: '野马' },
+        { en: 'Volkswagen', cn: '大众' },
+        { en: 'Hong Qi', cn: '红旗' },
+        { en: 'Polestar', cn: '极星' },
+        { en: 'NIKE', cn: '耐克' },
+        { en: 'Mclaren', cn: '迈凯伦' },
+        { en: 'Buick', cn: '别克' },
+        { en: 'Lamborghini', cn: '兰博基尼' },
+        { en: 'Citroen', cn: '雪铁龙' },
+        { en: 'Jaguar', cn: '捷豹' },
+        { en: 'Koenigsegg', cn: '柯尼塞格' },
+        { en: 'Pagani', cn: '帕加尼' },
+        { en: 'STAR WARS', cn: '星球大战' },
+        { en: 'Marvel', cn: '漫威' },
+        { en: 'Bentley', cn: '宾利' },
+        { en: 'Rolls ROYCE', cn: '劳斯莱斯' },
+        { en: 'BATMOBILE', cn: '蝙蝠车' },
+        { en: 'Li', cn: '理想' },
+        { en: 'BYD', cn: '比亚迪' },
         { en: 'Wuling', cn: '五菱宏光' }
     ],
     // Reel 4: Style / 风格
@@ -84,7 +112,7 @@ const data = {
         { en: 'Cyberpunk', cn: '赛博朋克' },
         { en: 'Steampunk', cn: '蒸汽朋克' },
         { en: 'Futurism', cn: '未来主义' },
-        { en: 'Industrial', cn: '重工业风' },
+        { en: 'Industrial', cn: '工业风' },
         { en: 'Cubism', cn: '立体派' },
         { en: 'Structivism', cn: '结构主义' },
         { en: 'Constructivism', cn: '解构主义' },
@@ -109,10 +137,12 @@ const data = {
         { en: 'Parametric', cn: '参数化' }, // Fixed typo
         { en: 'Geometry', cn: '几何' },
         { en: 'Production', cn: '产品风' }, // Fixed typo
-        { en: 'Graffiti', cn: '涂鸦' },
+        { en: 'Mat glass', cn: '毛玻璃' },
+        { en: 'Low Poly', cn: '多边形' },
+        { en: 'Boolean', cn: '布尔切割' },
         { en: 'JDM', cn: '日式改装' },
         { en: 'Chinese', cn: '中华风' },
-        { en: 'Retrowave', cn: '复古波形' }
+        { en: 'RetroFuture', cn: '复古未来' }
     ]
 };
 
@@ -215,5 +245,6 @@ function generatePrompt(res) {
         if(i > fullText.length - 1) clearInterval(typeWriter);
     }, 25);
 }
+
 
 spinBtn.addEventListener('click', spin);
