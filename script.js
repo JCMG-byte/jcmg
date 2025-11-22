@@ -78,7 +78,7 @@ const data = {
         { en: 'TOYOTA', cn: '丰田' },
         { en: 'Lexus', cn: '雷克萨斯' },
         { en: 'HYUNDAI', cn: '现代' },
-        { en: 'GENESIS', cn: '捷尼塞斯' },
+        { en: 'GENESIS', cn: '捷尼赛思' },
         { en: 'KIA', cn: '起亚' },
         { en: 'Range Rover', cn: '路虎' },
         { en: 'Honda', cn: '本田' },
@@ -248,3 +248,4 @@ function generatePrompt(res) {
 
 
 spinBtn.addEventListener('click', spin);
+
